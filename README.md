@@ -20,5 +20,3 @@ java yourCode -n Hamlet.txt.m2f // Reverse Huffman code and move-to-front
 The first 256 bytes are the decode[] table<br>
 The rest is the compressed data
 
-
-#### A lot of other codes helped me.
