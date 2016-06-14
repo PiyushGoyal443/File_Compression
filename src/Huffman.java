@@ -16,29 +16,33 @@ public class Huffman {
 			return;
 		}
 		
-		if (args[0] == "-h") {
+		if (args[0].equals("-h")) {
 			System.out.print("\nCompresing .....");
 			HuffmanCompress hc = new HuffmanCompress();
 			hc.compress(args[1], 0);
 			System.out.print("\nCompresing Done");
 		}
-		else if (args[0] == "-i") {
+		else if (args[0].equals("-i")) {
 			System.out.print("\nDecompresing .....");
 			HuffmanDecompress hd = new HuffmanDecompress();
 			hd.decompress(args[1], 0);
 			System.out.print("\nDecompresing Done");
 		}
-		else if (args[0] == "-m") {
+		else if (args[0].equals("-m")) {
 			System.out.print("\nCompresing .....");
 			Encode ed = new Encode();
 			ed.encode(args[1]);
 			System.out.print("\nCompresing Done");
 		}
-		else if (args[0] == "-n") {
+		else if (args[0].equals("-n")) {
 			System.out.print("\nDecompresing .....");
 			Decode dd = new Decode();
 			dd.decode(args[1]);
 			System.out.print("\nDecompresing Done");
+		}
+		else {
+			System.out.print("Wrong CommandLine Arguments");
+			
 		}
 	}
 
